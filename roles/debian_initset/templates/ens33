@@ -1,0 +1,5 @@
+auto ens33
+iface ens33 inet static
+  address {{ hostvars[inventory_hostname]['if_ip'] }}
+  netmask {{ hostvars[inventory_hostname]['if_mask'] }}
+  gateway {{ hostvars[inventory_hostname]['if_gateway'] }}

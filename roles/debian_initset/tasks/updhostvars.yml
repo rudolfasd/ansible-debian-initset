@@ -1,0 +1,6 @@
+- name: update ansible server host_vars/{{ hostvars[inventory_hostname].inventory_hostname }}
+  local_action:
+    module: lineinfile
+    dest: /root/.ansible/host_vars/{{ hostvars[inventory_hostname].inventory_hostname }}
+    regexp: "ansible_ssh_host:"
+    line: "ansible_ssh_host: {{ hostvars[inventory_hostname].if_ip }}"

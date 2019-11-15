@@ -1,0 +1,6 @@
+- name: set /etc/hosts
+  template:
+    src: hosts
+    dest: /etc/hosts
+    backup: yes
+

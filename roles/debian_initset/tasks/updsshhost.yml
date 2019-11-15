@@ -1,0 +1,3 @@
+- name: update ansible_ssh_host
+  set_fact:
+    ansible_ssh_host: "{{ hostvars[inventory_hostname].if_ip }}"

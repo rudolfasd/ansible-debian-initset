@@ -1,0 +1,10 @@
+---
+- include: setsshkeys.yml
+- include: sethostname.yml
+- include: setip.yml
+- include: sethosts.yml
+- include: setresolv.yml
+- include: updhostvars.yml
+- include: reboot.yml
+- include: updsshhost.yml
+- include: waitforhost.yml

@@ -1,0 +1,4 @@
+---
+- hosts: debian_initset
+  roles:
+    - debian_initset

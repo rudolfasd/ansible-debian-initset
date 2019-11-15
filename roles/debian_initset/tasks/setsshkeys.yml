@@ -1,0 +1,5 @@
+- name: setsshkeys
+  authorized_key:
+    user: root
+    state: present
+    key: "{{ lookup('file', '/root/.ssh/id_rsa.pub') }}"
